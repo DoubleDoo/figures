@@ -1,0 +1,14 @@
+{
+  "name": "figures",
+  "version": "1.0.0",
+  "description": "Figures library",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "author": "Dmitry Dubina"
+}
