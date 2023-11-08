@@ -4,16 +4,20 @@
 
 Для компиляции перейдите в корень библиотеки и введите
 
-npm install
 
+npm install
 tsc -b
+
 
 После этого можно подключить в существующий проект командой
 
 npm link ../figures
 
-npx ts-node index.ts
+Где ../figures путь к папке с библиотекой.
 
+Не покрывал тестами, для беглой проверки исспользовал такой код.
+
+```typescript
 import { Circle, Point, Polygon, Rectangular, Triangle } from "figures";
 
 const example= async() => {
@@ -62,3 +66,6 @@ await obj6.areaCalc().then((res) => console.log(res));
 
 console.log("example...");
 example();
+```
+
+Запускал через npx ts-node.
